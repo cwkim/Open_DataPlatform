@@ -1,0 +1,4 @@
+requests
+scandir
+pandas
+pymongo

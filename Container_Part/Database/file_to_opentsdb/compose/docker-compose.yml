@@ -1,0 +1,35 @@
+version: '3'
+
+services: 
+    opentsdb:
+      image: petergrace/opentsdb-docker:latest
+      restart: always
+      ports:
+          - "60010:4242"
+      volumes:
+        - "./opentsdb_volume:/data/hbase"
+      container_name: opentsdb_container
+
+    app_csv_to_opentsdb:
+      image: goo99999/file_to_tsdb:v3
+      #container에 ssh 접속을 위해 로컬포트:컨테이너내부포트 포트포워딩
+      #ports:
+      # - "5004:22"
+      volumes:
+        - "./app_file2otsdb_volume:/app/FILE2TSDB"
+        - "./files:/app/files"
+      environment:
+        - TSDB_IP=keti-ev.iptime.org # 저장할 opentsdb의 
+        - TSDB_PORT=60010 # 저장할 opentsdb의 port
+        - FIELDNAME=FUEL_CONSUM_DAY|FUEL_CONSUM_TOTAL # openTSDB에 저장할 CSV파일 데이터의 컬럼명 ('|'문자로 여러 컬럼 저장가능)
+        - IDFIELD=PHONE_NUM # openTSDB에 저장할 CSV파일의 데이터 중 carid 컬럼명
+        - TIMEFIELD=RECORD_TIME # openTSDB에 저장할 CSV파일의 시간 데이터 컬럼명
+        - METRIC=csv_data1 # openTSDB에 저장할 metric(table) 명
+        - PN=2 # csv데이터를 json format으로 변환시키는 프로세스의 수 (PC 사양에 따라 알맞게 지정) 
+        - CN=2 # 변환된 json데이터를 opentsdb에 전송해주는 프로세스의 수 (PC 사양에 따라 알맞게 지정) 
+      container_name: csv2otsdb_container
+      # --link 옵션을 이용해 opentsdb container 와 link를 맺을 것을 설정한다. 
+      # 이렇게 설정하면, csv_to_opentsdb container 는 opentsdb container 를 IP 가 아닌 container의 이름을 이용해 통신할 수 있다.
+      # csv_to_opentsdb container의 /etc/hosts 파일에 opentsdb container의 IP 주소와 host명이 등록되어 있다.
+      links:
+        - opentsdb:db

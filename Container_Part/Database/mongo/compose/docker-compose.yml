@@ -1,0 +1,61 @@
+version: '3'
+
+services: 
+    mongodb:          # mongoDB 서비스
+      image: mongo    # 해당 service에서 사용할 image입니다.
+      restart: always # container를 실행할 때 항상 이미 수행중이라면 재시작을 수행합니다.
+      environment:    # 환경변수를 정의합니다.
+          MONGO_INITDB_ROOT_USERNAME: strapi
+          MONGO_INITDB_ROOT_PASSWORD: strapi
+      volumes:        # container -> local로 mount할 수 있습니다.
+          - "./mongodata/db:/data/db" # local:container
+      container_name: "mongodb" # container의 name을 정의합니다.
+      ports:                # service port를 정의합니다.
+          - '27017:27017'     # local:container
+
+    app_csv_to_mongo:
+      image: goo99999/csv_to_mongo:v3
+      #container에 ssh 접속을 위해 로컬포트:컨테이너내부포트 포트포워딩
+      #ports:
+      # - "5004:22"
+      volumes:
+          - "./app_csv2mongo_volume:/app/CSV2MONGO"
+          - "./CSV_in:/app/CSV_in"
+      environment:
+          - MONGO_IP=keti-ev.iptime.org # 접속할 몽고디비의 ip
+          - MONGO_PORT=27017 # 접속할 몽고디비의 port
+          - MONGO_DB_NAME=testdb # 접속할 몽고디비의 DB이름
+          - MONGO_USER=strapi # 접속할 몽고디비의 사용자명
+          - MONGO_PASSWORD=strapi # 접속할 몽고디비의 사용자 비밀번호
+          - CSV_TIME_COL=RECORD_TIME # 몽고디비에 저장할 CSV파일의 시간 데이터 컬럼명
+          - CSV_ID_COL=PHONE_NUM # 몽고디비에 저장할 CSV파일의 차량번호 데이터 컬럼명
+      container_name: csv2mongo_container
+      # --link 옵션을 이용해 mongodb container 와 link를 맺을 것을 설정한다. 
+      # 이렇게 설정하면, csv_to_opentsdb container 는 mongo container 를 IP 가 아닌 container의 이름을 이용해 통신할 수 있다.
+      # csv_to_mongo container의 /etc/hosts 파일에 mongo container의 IP 주소와 host명이 등록되어 있다.
+      links:
+          - mongodb:db
+
+    app_mongo_to_csv:
+      image: goo99999/mongo_to_csv:v3
+      #container에 ssh 접속을 위해 로컬포트:컨테이너내부포트 포트포워딩
+      #ports:
+      # - "5004:22"
+      volumes:
+          - "./app_mongo2csv_volume:/app/MONGO2CSV"
+          - "./CSV_out:/app/CSV_out"
+      environment:
+          - MONGO_IP=keti-ev.iptime.org # 접속할 몽고디비의 port
+          - MONGO_PORT=27017 # 접속할 몽고디비의 port
+          - MONGO_USER=strapi # 접속할 몽고디비의 사용자명
+          - MONGO_PASSWORD=strapi # 접속할 몽고디비의 비밀번호
+          - MONGO_DB_NAME=testdb # 접속할 몽고디비의 DB이름
+          - MONGO_COLL_NAME=20200101 # 접속할 몽고디비의 Collection이름
+          - ID_COLUMN=PHONE_NUM # 몽고디비에서 쿼리할 차량 번호의 컬럼명
+          - ID_QUERY_COUNT=1 # 몽고디비에서 쿼리할 차량의 MAX수
+      container_name: mongo2csv_container
+      # --link 옵션을 이용해 mongo container 와 link를 맺을 것을 설정한다. 
+      # 이렇게 설정하면, mongo_to_csv container 는 mongo container 를 IP 가 아닌 container의 이름을 이용해 통신할 수 있다.
+      # mongo_to_csv container의 /etc/hosts 파일에 mongo container의 IP 주소와 host명이 등록되어 있다.
+      links:
+          - mongodb:db

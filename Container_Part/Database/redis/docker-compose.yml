@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+    redis6001:
+      image: redis:5.0.3
+      container_name: redis_container
+      labels:
+        - "name=redis"
+        - "mode=standalone"
+      network_mode: host
+      ports:
+          - 6379:6379
+      # volumes:
+      #     - /root/docker/redis-5.0.3/6001:/data
