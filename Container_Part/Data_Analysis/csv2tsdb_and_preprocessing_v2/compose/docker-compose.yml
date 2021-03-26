@@ -1,0 +1,88 @@
+# Author : HojunJi
+
+version: '3'
+
+services:
+    #opentsdb container 실행
+    opentsdb:
+      image: petergrace/opentsdb-docker:latest
+      restart: always
+      #로컬에서 opentsdb 웹접속을 위한 로컬포트:컨테이너내부포트 포트포워딩
+      ports:
+          - "60010:4242"
+      #environment:
+      #    - WAITSECS=30   
+
+    #csv to opentsdb container 실행
+    app_csv_otsdb:
+      image: jihoho/file_to_otsdb:v1
+      #container에 ssh 접속을 위해 로컬포트:컨테이너내부포트 포트포워딩
+      ports:
+        - "5004:22"
+      volumes:
+        - "./01_app_csv2ots_volume:/app/FILE2TSDB/"
+        - "./csv_volume:/app/csv"
+      environment:
+        - FIELDNAME=DRIVE_SPEED|DRIVE_LENGTH_TOTAL
+        - IDFIELD=PHONE_NUM
+        - TIMEFIELD=RECORD_TIME
+        - METRIC=csv_data
+        - PN=2
+        - CN=2
+      # --link 옵션을 이용해 opentsdb container 와 link를 맺을 것을 설정한다. 
+      # 이렇게 설정하면, csv_to_opentsdb container 는 opentsdb container 를 IP 가 아닌 container의 이름을 이용해 통신할 수 있다.
+      # csv_to_opentsdb container의 /etc/hosts 파일에 opentsdb container의 IP 주소와 host명이 등록되어 있다.
+      links:
+        - opentsdb:db
+        
+    #이상치 제거 container 실행
+    app_rm_outlier:
+      image: jihoho/opentsdb_remove_outlier:v4
+      ports:
+        - "5005:22"
+      volumes:
+        - "./02_app_rmoutlier_volume:/app/apps/02_otsdb_rm_outlier"
+      environment:
+        - METRIC_IN=csv_data
+        - METRIC_OUT=rm_outlier
+      links:
+        - opentsdb:db
+
+    # 주행구간 추출 전처리 container 실행
+    app_get_driving:
+      image: jihoho/opentsdb_get_driving:v5
+      ports:
+        - "5006:22"
+      volumes:
+        - "./03_app_get_driving_volume:/app/apps/02_otsdb_get_drive_startend"
+      environment:
+        - METRIC_IN=rm_outlier
+        - METRIC_OUT=driving_startend
+      links:
+        - opentsdb:db
+
+    # 정차구간 추출 전처리 container 실행
+    app_get_stop:
+      image: jihoho/opentsdb_get_stop:v4
+      ports:
+        - "5007:22"
+      volumes:
+        - "./04_app_get_stop_volume:/app/apps/otsdb_get_stop"
+      environment:
+        - METRIC_IN=rm_outlier|driving_startend
+        - METRIC_OUT=stop_startend
+      links:
+        - opentsdb:db
+
+    # 주차구간 추출 전처리 container 실행
+    app_get_parking:
+      image: goo99999/opentsdb_get_parking:v2
+      ports:
+        - "5008:22"
+      volumes:
+        - "./05_app_get_parking_volume:/app/apps/otsdb_get_parking"
+      environment:
+        - METRIC_IN=rm_outlier
+        - METRIC_OUT=parking_startend
+      links:
+        - opentsdb:db
