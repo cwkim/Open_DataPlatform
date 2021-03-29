@@ -1,0 +1,91 @@
+
+파일명        : 01225797234_DRIVE_LENGTH_TOTAL_OUT_*
+
+../../3_rmOutlier/outlierData/01225797234/01225797234_DRIVE_LENGTH_TOTAL_OUT_1.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559378277 (2019-06-01 17:37:57)
+Max timestamp   : 1559743766 (2019-06-05 23:09:26)
+
+total value Cnt : 155498
+Min value       : 0
+Max value       : 0
+
+tags            : VEHICLE_NUM : 1225797234
+                  fieldname : DRIVE_LENGTH_TOTAL_1_OUT
+                  
+-----------------------------------------------------
+
+파일명        : 01225797196_DRIVE_LENGTH_TOTAL_OUT_*
+
+../../3_rmOutlier/outlierData/01225797196/01225797196_DRIVE_LENGTH_TOTAL_OUT_1.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559378095 (2019-06-01 17:34:55)
+Max timestamp   : 1559585342 (2019-06-04 03:09:02)
+
+total value Cnt : 107720
+Min value       : 0
+Max value       : 4294901
+
+tags            : VEHICLE_NUM : 1225797196
+                  fieldname : DRIVE_LENGTH_TOTAL_1_OUT
+                  
+-----------------------------------------------------
+
+파일명        : 01225797267_RPM_OUT_*
+
+../../3_rmOutlier/outlierData/01225797267/01225797267_RPM_OUT_1.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559662502 (2019-06-05 00:35:02)
+Max timestamp   : 1559757127 (2019-06-06 02:52:07)
+
+total value Cnt : 72
+Min value       : -30102
+Max value       : 29078
+
+tags            : VEHICLE_NUM : 1225797267
+                  fieldname : RPM_1_OUT
+                  
+-----------------------------------------------------
+
+파일명        : 01225797279_DRIVE_LENGTH_TOTAL_OUT_*
+
+../../3_rmOutlier/outlierData/01225797279/01225797279_DRIVE_LENGTH_TOTAL_OUT_1.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559378276 (2019-06-01 17:37:56)
+Max timestamp   : 1559484556 (2019-06-02 23:09:16)
+
+total value Cnt : 106278
+Min value       : 0
+Max value       : 0
+
+tags            : VEHICLE_NUM : 1225797279
+                  fieldname : DRIVE_LENGTH_TOTAL_1_OUT
+                  
+-----------------------------------------------------
+
+파일명        : 01225797267_DRIVE_LENGTH_TOTAL_OUT_*
+
+../../3_rmOutlier/outlierData/01225797267/01225797267_DRIVE_LENGTH_TOTAL_OUT_1.json
+../../3_rmOutlier/outlierData/01225797267/01225797267_DRIVE_LENGTH_TOTAL_OUT_2.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559378123 (2019-06-01 17:35:23)
+Max timestamp   : 1559918899 (2019-06-07 23:48:19)
+
+total value Cnt : 270324
+Min value       : 0
+Max value       : 4289203
+
+tags            : VEHICLE_NUM : 1225797267
+                  fieldname : DRIVE_LENGTH_TOTAL_1_OUT
+                  
+-----------------------------------------------------

@@ -1,0 +1,236 @@
+
+파일명        : 01225797196_RPM_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797196/01225797196_RPM_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797196/01225797196_RPM_2.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797196/01225797196_RPM_3.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 593818
+Min value       : 0
+Max value       : 2128
+
+tags            : VEHICLE_NUM : 1225797196
+                  fieldname : RPM_1
+                  
+-----------------------------------------------------
+
+파일명        : 01225797196_DRIVE_SPEED_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797196/01225797196_DRIVE_SPEED_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797196/01225797196_DRIVE_SPEED_2.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797196/01225797196_DRIVE_SPEED_3.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 593818
+Min value       : 0
+Max value       : 88
+
+tags            : VEHICLE_NUM : 1225797196
+                  fieldname : DRIVE_SPEED
+                  
+-----------------------------------------------------
+
+파일명        : 01225797267_DRIVE_SPEED_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797267/01225797267_DRIVE_SPEED_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797267/01225797267_DRIVE_SPEED_2.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797267/01225797267_DRIVE_SPEED_3.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 591956
+Min value       : 0
+Max value       : 90
+
+tags            : VEHICLE_NUM : 1225797267
+                  fieldname : DRIVE_SPEED
+                  
+-----------------------------------------------------
+
+파일명        : 01225797279_RPM_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797279/01225797279_RPM_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797279/01225797279_RPM_2.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797279/01225797279_RPM_3.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 595017
+Min value       : 0
+Max value       : 2439
+
+tags            : VEHICLE_NUM : 1225797279
+                  fieldname : RPM_1
+                  
+-----------------------------------------------------
+
+파일명        : 01225797234_DRIVE_SPEED_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797234/01225797234_DRIVE_SPEED_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797234/01225797234_DRIVE_SPEED_2.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797234/01225797234_DRIVE_SPEED_3.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 594796
+Min value       : 0
+Max value       : 100
+
+tags            : VEHICLE_NUM : 1225797234
+                  fieldname : DRIVE_SPEED
+                  
+-----------------------------------------------------
+
+파일명        : 01225797279_DRIVE_LENGTH_TOTAL_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797279/01225797279_DRIVE_LENGTH_TOTAL_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797279/01225797279_DRIVE_LENGTH_TOTAL_2.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 488739
+Min value       : 1551
+Max value       : 2092
+
+tags            : VEHICLE_NUM : 1225797279
+                  fieldname : DRIVE_LENGTH_TOTAL_1
+                  
+-----------------------------------------------------
+
+파일명        : 01225797196_DRIVE_LENGTH_TOTAL_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797196/01225797196_DRIVE_LENGTH_TOTAL_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797196/01225797196_DRIVE_LENGTH_TOTAL_2.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 486098
+Min value       : 776
+Max value       : 888
+
+tags            : VEHICLE_NUM : 1225797196
+                  fieldname : DRIVE_LENGTH_TOTAL_1
+                  
+-----------------------------------------------------
+
+파일명        : 01225797267_RPM_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797267/01225797267_RPM_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797267/01225797267_RPM_2.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797267/01225797267_RPM_3.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 591873
+Min value       : 0
+Max value       : 2024
+
+tags            : VEHICLE_NUM : 1225797267
+                  fieldname : RPM_1
+                  
+-----------------------------------------------------
+
+파일명        : 01225797279_DRIVE_SPEED_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797279/01225797279_DRIVE_SPEED_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797279/01225797279_DRIVE_SPEED_2.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797279/01225797279_DRIVE_SPEED_3.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 595017
+Min value       : 0
+Max value       : 87
+
+tags            : VEHICLE_NUM : 1225797279
+                  fieldname : DRIVE_SPEED
+                  
+-----------------------------------------------------
+
+파일명        : 01225797267_DRIVE_LENGTH_TOTAL_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797267/01225797267_DRIVE_LENGTH_TOTAL_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797267/01225797267_DRIVE_LENGTH_TOTAL_2.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 321632
+Min value       : 1176
+Max value       : 1299
+
+tags            : VEHICLE_NUM : 1225797267
+                  fieldname : DRIVE_LENGTH_TOTAL_1
+                  
+-----------------------------------------------------
+
+파일명        : 01225797234_DRIVE_LENGTH_TOTAL_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797234/01225797234_DRIVE_LENGTH_TOTAL_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797234/01225797234_DRIVE_LENGTH_TOTAL_2.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 439298
+Min value       : 1681
+Max value       : 2130
+
+tags            : VEHICLE_NUM : 1225797234
+                  fieldname : DRIVE_LENGTH_TOTAL_1
+                  
+-----------------------------------------------------
+
+파일명        : 01225797234_RPM_*
+
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797234/01225797234_RPM_1.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797234/01225797234_RPM_2.json
+/mnt/c/pythonworkspace/github/git/Universal_code/rmOutlier/cleanupData/01225797234/01225797234_RPM_3.json
+
+metric          : Elex_data
+
+Min timestamp   : 1559314800 (2019-06-01 00:00:00)
+Max timestamp   : 1559919599 (2019-06-07 23:59:59)
+
+total value Cnt : 594794
+Min value       : 0
+Max value       : 2516
+
+tags            : VEHICLE_NUM : 1225797234
+                  fieldname : RPM_1
+                  
+-----------------------------------------------------

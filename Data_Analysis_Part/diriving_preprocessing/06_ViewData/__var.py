@@ -1,0 +1,1 @@
+meta={'ip': '125.140.110.217', 'metric': 'Elex_data', 'metric2': 'Elex_data', 'mins': None, 'port': '54242', 'end': '2019/06/08-00:00:00', 'field': 'DRIVE_LENGTH_TOTAL', 'field2': 'DRIVE_LENGTH_TOTAL_1', 'days': 1, 'hrs': None, 'start': '2019/06/01-00:00:00', 'tags1': 'VEHICLE_NUM', 'tags2': 'fieldname'}

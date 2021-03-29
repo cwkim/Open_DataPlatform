@@ -1,0 +1,62 @@
+
+갱신되거나(삭제 또는 수정된) 원본 디렉토리에 존재하지 않는 파일 목록
+
+
+CSV 파일 탐색 시작
+
+ [loop] recursive searching ../files/CSV
+ [loop] recursive searching ../files/CSV/201906
+
+갱신될(추가된) 파일 목록 수 (개): 0
+
+
+--------------------------디렉토리 정보---------------------------
+
+../files/CSV/201906
+01225797234.csv : 291240 lines
+01225797060.csv : 60663 lines
+01225797052.csv : 52369 lines
+total : 404272 lines
+
+
+----------------------------필드 목록-----------------------------
+
+1번째 type file : 3
+0          Unnamed: 0          
+1         ACCEL_PEDAL          
+2           ACCEL_X            
+3           ACCEL_Y            
+4          AIR_GAUGE           
+5        AMBIENT_TEMPER        
+6             AMP              
+7       BATTERY_VOLTAGE        
+8      CHANGE_GEAR_STEPS       
+9         CHANGE_LEVER         
+10        COOLANT_TEMPER        
+11       DEVICE_STATUS_CD       
+12      DRIVE_LENGTH_TOTAL      
+13         DRIVE_SPEED          
+14         DRIVE_STATUS         
+15             DTC              
+16         ENGINE_GAUGE         
+17      ENGINE_OIL_TEMPER       
+18        ENGINE_TORQUE         
+19       FUEL_CONSUM_DAY        
+20      FUEL_CONSUM_TOTAL       
+21          GPS_ANGLE           
+22           GPS_LAT            
+23           GPS_LONG           
+24        INTAKE_TEMPER         
+25             MAF              
+26         ORIGIN_TYPE          
+27          PHONE_NUM           
+28         RECORD_TIME          
+29           REQ_TIME           
+30             RPM              
+31           TEMPER1            
+32           TEMPER2            
+33         VEHICLE_TYPE         
+34             _id              
+
+
+------------------------------------------------------------------
