@@ -1,13 +1,6 @@
 #-*- coding: utf-8 -*-
 #!/usr/bin/env python
 
-'''
-    Author : Jaekyu Lee, github : https://github.com/JaekyuLee
-             https://github.com/ChulseoungChae
-             https://github.com/KimHyeongGoo
-             https://github.com/jeonghoonkang
-'''
-
 from __future__ import print_function
 import pandas as pd
 import time

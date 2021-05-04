@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Author : https://github.com/CHOBO1
-#          https://github.com/jeonghoonkang          
-
 from __future__ import print_function
 import os
 import requests

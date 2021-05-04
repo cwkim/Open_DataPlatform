@@ -1,9 +1,4 @@
 #-*- coding:utf-8 -*-
-'''
-Author : https://github.com/KimHyeongGoo
-       : https://github.com/ChulseoungChae
-       : https://github.com/jeonghoonkang
-'''
 
 import time
 import os

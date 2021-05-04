@@ -1,0 +1,129 @@
+{
+  "accel": {
+    "truck": {
+      "diff": 5,
+      "start": 6
+    },
+    "bus": {
+      "diff": 6,
+      "start": 6
+    },
+    "car": {
+      "diff": 8,
+      "start": 6
+    }
+  },
+  "deacc": {
+    "truck": {
+      "diff": -8,
+      "end": 6
+    },
+    "bus": {
+      "diff": -9,
+      "end": 6
+    },
+    "car": {
+      "diff": -14,
+      "end": 6
+    }
+  },
+  "quick_start": {
+    "truck": {
+      "diff": 6,
+      "start": 5
+    },
+    "bus": {
+      "diff": 8,
+      "start": 5
+    },
+    "car": {
+      "diff": 10,
+      "start": 5
+    }
+  },
+  "sudden_stop": {
+    "truck": {
+      "diff": -8,
+      "end": 5
+    },
+    "bus": {
+      "diff": -9,
+      "end": 5
+    },
+    "car": {
+      "diff": -14,
+      "end": 5
+    }
+  },
+  "turn": {
+    "truck": {
+      "s": 20,
+      "delta_time": 4,
+      "cumulated": "60,120"
+    },
+    "bus": {
+      "s": 25,
+      "delta_time": 4,
+      "cumulated": "60,120"
+    },
+    "car": {
+      "s": 30,
+      "delta_time": 3,
+      "cumulated": "60,120"
+    }
+  },
+  "u_turn": {
+    "truck": {
+      "s": 15,
+      "delta_time": 8,
+      "cumulated": "160,180"
+    },
+    "bus": {
+      "s": 20,
+      "delta_time": 8,
+      "cumulated": "160,180"
+    },
+    "car": {
+      "s": 25,
+      "delta_time": 6,
+      "cumulated": "160,180"
+    }
+  },
+  "continue": {
+    "truck": {
+      "min_drive": 240,
+      "max_rest": 15
+    },
+    "bus": {
+      "min_drive": 240,
+      "max_rest": 15
+    },
+    "car": {
+      "min_drive": 240,
+      "max_rest": 15
+    }
+  },
+  "lane_switch": {
+    "truck": {
+      "s": 30,
+      "angle": 6,
+      "angle_per_sec": 2,
+      "switch_accel": 2,
+      "outrun_accel": 3
+    },
+    "bus": {
+      "s": 30,
+      "angle": 8,
+      "angle_per_sec": 2,
+      "switch_accel": 2,
+      "outrun_accel": 3
+    },
+    "car": {
+      "s": 30,
+      "angle": 10,
+      "angle_per_sec": 2,
+      "switch_accel": 2,
+      "outrun_accel": 3
+    }
+  }
+}

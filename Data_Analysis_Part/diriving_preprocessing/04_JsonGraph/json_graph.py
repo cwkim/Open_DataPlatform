@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# Author : ChulseoungChae, https://github.com/ChulseoungChae
 
 from __future__ import print_function
 import os

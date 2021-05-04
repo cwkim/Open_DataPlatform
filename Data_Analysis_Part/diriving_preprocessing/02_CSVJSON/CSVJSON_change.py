@@ -1,13 +1,6 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-'''
-    Author : Jaekyu Lee, github : https://github.com/JaekyuLee
-             https://github.com/ChulseoungChae
-             https://github.com/KimHyeongGoo
-             https://github.com/jeonghoonkang
-'''
-
 from __future__ import print_function
 #import requests
 import time

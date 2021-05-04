@@ -1,7 +1,4 @@
 #-*- coding:utf-8 -*-
-'''
-Author : CS Chae, github : https://github.com/ChulseoungChae
-'''
 
 from __future__ import print_function
 import pprint
