@@ -1,11 +1,25 @@
 Data Analysis Part:
 - 데이터 전처리
   - driving_prepreocessing (차량 주행, 정차, 주차구간 관련 전처리 코드)
+  - CollectionTime (차량별 데이터 수집시간 확인)
+  - CountCars (수집 차량 수 확인)
+  - GPSAngle (GPS 값을 이용한 각도 계산)
+  - Statistics (일별 속성 통계값 계산)
 - 데이터 분석
   - DangerDriving (위험운전 분석 코드)
   - DangerService (위험운전 랭크, 상태 분석 코드)
   - DrivingInfo (운행 데이터 분석)
   - EcoDriving (경제운전 분석)
+  - ARIMA (시계열 예측모델)
+  - CorrelationCoefficient (속성 상관관계분석)
+  - DepartureArrival (차량의 거점 출도착 분석)
+  - DTC_Decoding (차량 고장진단코드의 해석)
+  - Indicator (속성 위험지표 생성)
+  - VisitList (차량 방문지 도출)
 - ML 분석
   - MajorDangerDriving (주요 위험 지역 분석 코드)
+  - MultiLR (다중선형회귀분석)
+  - DensityClustering (주요장소 추출 - 밀도기반의 군집분석)
+  - Outlier (속성 이상치 탐지 모델)
 - DL 분석
+  - LSTM (시계열 예측 모델)
