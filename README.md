@@ -1,3 +1,4 @@
 # Open_DataPlatform
 
-중요 정보(URL, ID, PW 등) 제거 후 Public 
+Python 기반 데이터 수집, 분석, 웹 서비스 등으로 구분된 코드 제공
+
